@@ -1,0 +1,10 @@
+# Policies required
+
+allow dynamic-group SekarDynamicGroup to manage all-resources in compartment DivyanshuTest
+
+# pipeline
+devopsbuilddevtest tenancy
+sekar compartment
+DevOps Projects : test123
+Build Pipelines: print-rp
+
