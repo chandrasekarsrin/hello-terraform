@@ -9,7 +9,7 @@ env:
 
 steps:
   - type: Command
-    name: "Create Service infrastructure."
+    name: "Create Service infrastructure using terraform."
     command: |
       terraform init
       terraform plan -out tfplan
