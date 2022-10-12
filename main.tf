@@ -4,8 +4,8 @@ provider "oci" {
 }
 
 resource "oci_objectstorage_bucket" "test_bucket" {
-    #Required
-    compartment_id = "ocid1.compartment.oc1..aaaaaaaay5qjjbyby6nlevnr6nj3hbkdkctsr6phfkny4oqqfymmz2oe3gpa"
+    #Required - devopsbuildprodtest
+    compartment_id = "ocid1.compartment.oc1..aaaaaaaafkqteb2m6oygf6hr4wtpkf4g3il45zj26zsnhtx7umr54t7sxlga"
     name = "terraform-test1"
-    namespace = "id204we8d65n"
+    namespace = "axsewmzamo2h"
 }
