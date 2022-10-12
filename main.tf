@@ -1,7 +1,13 @@
-resource "oci_core_subnet" "test_subnet" {
+data "oci_core_images" "test_images" {
     #Required
-    cidr_block = "10.0.1.0/24"
-    compartment_id = "ocid1.tenancy.oc1..aaaaaaaamwky26uqopqhzjegqc4qicwvrv6ar2jt6tl2dlqdsohehzw7nkiq"
-    vcn_id = "ocid1.vcn.oc1.iad.amaaaaaam4dsnnia4hrwdfjf54qgr346blxvizd5s5n4lozxqadbvngx5gza"
-    display_name = "to-be-deleted"
+    compartment_id = var.compartment_id
+
+    #Optional
+    display_name = var.image_display_name
+    operating_system = var.image_operating_system
+    operating_system_version = var.image_operating_system_version
+    shape = var.image_shape
+    state = var.image_state
+    sort_by = var.image_sort_by
+    sort_order = var.image_sort_order
 }
